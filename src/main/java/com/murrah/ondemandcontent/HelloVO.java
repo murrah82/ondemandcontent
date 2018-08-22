@@ -1,12 +1,13 @@
 package com.murrah.ondemandcontent;
 
 
-public class ContentVO {
+
+public class HelloVO {
 
     private final long id;
-    private byte[]  content;
+    private final String content;
 
-    public ContentVO(long id, byte[] content) {
+    HelloVO(long id, String content) {
         this.id = id;
         this.content = content;
     }
@@ -15,7 +16,7 @@ public class ContentVO {
         return id;
     }
 
-    public byte[] getContent() {
+    public String getContent() {
         return content;
     }
 }
